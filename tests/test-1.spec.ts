@@ -9,7 +9,7 @@ test('test', async ({ page }) => {
   await page.getByRole('img', { name: 'Xbox Wireless Controller Mineral Camo Special Edition' }).click();
   await page.getByRole('button', { name: '+' }).click();
   await page.getByRole('button', { name: 'Add To Bag' }).click();
-  await page.getByLabel('cart').click();
+  await page.getByLabel('bag').click();
   await expect(page.locator('div').filter({ hasText: /^Xbox Wireless Controller Mineral Camo Special Edition$/ })).toBeVisible();
 
   await page.getByRole('link', { name: 'Remove' }).click();
