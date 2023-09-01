@@ -14,5 +14,4 @@ test('test', async ({ page }) => {
 
   await page.getByRole('link', { name: 'Remove' }).click();
   await expect(page.locator('div').filter({ hasText: /^Xbox Wireless Controller Mineral Camo Special Edition$/ })).not.toBeVisible();
-
 });
