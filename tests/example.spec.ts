@@ -15,5 +15,4 @@ test('get started link', async ({ page }) => {
 
   // Expects the URL to contain intro.
   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
-  
 });
